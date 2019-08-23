@@ -1,6 +1,7 @@
 <html>
 <body>
 	<?php
+teach('ip.json');
 $output = file_get_contents('ip.json');
 $ip = (array)json_decode($output, true);
 $unix = time();
